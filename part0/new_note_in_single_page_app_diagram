@@ -1,0 +1,14 @@
+sequenceDiagram
+    participant browser
+    participant server
+
+    Note over browser: User writes a new note in the SPA input field and clicks Save
+
+    browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa<br/>JSON payload with note content + timestamp
+    activate server
+    server-->>browser: 201 Created (JSON confirmation)
+    deactivate server
+
+    Note right of browser: SPA updates the UI dynamically without reloading the page
+
+    Note right of browser: The new note is added to browser's in-memory list<br/>and rendered immediately

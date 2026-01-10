@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+        "noImplicitAny": true,
+        "noImplicitReturns": true,
+        "strictNullChecks": true,
+        "strictPropertyInitialization": true,
+        "strictBindCallApply": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "noImplicitThis": true,
+        "alwaysStrict": true,
+        "esModuleInterop": true,
+        "declaration": true,
+        "target": "ES2022",
+        "module": "commonjs",
+        "outDir": "./build",
+        "rootDir": "./src"
+    },
+    "include": [
+        "src/**/*"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}
